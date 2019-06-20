@@ -77,6 +77,9 @@ A sorting algorithm where the largest values bubble up to the top!
 -> If arr[j] is greater than arr[j+1], swap those two values!
 -> Return the sorted array
 
+#Link:
+https://visualgo.net/en/sorting
+
 
 # Big O 
 ==== Time Complexity ====
@@ -89,3 +92,89 @@ O(n)    => best case scenario if -> array already sorted and using noSwap as i d
 
 
 -------------------------------------------------------
+
+#  Selection Sort Overview  #
+
+Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position
+
+# Selection Pseudocode #
+
+-> Store the first element as the smallest value you've seen so far.
+
+-> Compare this item to the next item in the array until you find a smaller number.
+
+-> If a smaller number is found, designate that smaller number to be the new "minimum" and              continue until the end of the array.
+
+-> If the "minimum" is not the value (index) you initially began with, swap the two values.
+
+-> Repeat this with the next element until the array is sorted.
+
+#Link: 
+https://visualgo.net/en/sorting
+
+# Big O 
+
+O (n^2); 
+
+=> better than bubble sort if i want to minmize the Swaps 
+=> One Swap of each Loop .
+
+
+-------------------------------------------------------
+
+# Insertion Sort Overview #
+
+Builds up the sort by gradually creating a larger left half which is always sorted
+
+# Insertion Sort Pseudocode #
+
+-> Start by picking the second element in the array
+
+-> Now compare the second element with the one before it and swap if necessary.
+
+-> Continue to the next element and if it is in the incorrect order, iterate through the sorted          portion (i.e. the left side) to place the element in the correct place.
+
+-> Repeat until the array is sorted.
+
+# Link :
+https://visualgo.net/en/sorting
+
+
+
+# Big O Notation :
+
+worst : O(n^2)
+
+best(almost sorted) : O(n)
+
+
+-------------------------------------------------------
+
+# Comparing  ( Bubble & Selection & Insertion )
+
+#Link :
+https://www.toptal.com/developers/sorting-algorithms
+
+
+
+# Big O Notation : 
+
+=== Time Complexity :->
+   ( Bubble + Insertion + Selection )
+
+      1- Average : O(n^2)  all 3
+
+      2- Worst   : O(n^2)  all 3
+
+      3- Best    : O(n) -- (Bubble and Insertion) but Selection is : O(n^2)
+
+
+=== Space Complexity :->
+      (Bubble + Insertion + Selection)
+
+         O (1)    all 3
+
+
+
+         
+
