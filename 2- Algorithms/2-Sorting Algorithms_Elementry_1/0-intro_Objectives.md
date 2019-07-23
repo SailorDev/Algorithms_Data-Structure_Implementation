@@ -48,7 +48,7 @@ Yes, it does!
 # Site: 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
--------------------------------------------------------
+# //-------------------------------------------------------
 
 # SWAP 
 => First You could swap before sorting !
